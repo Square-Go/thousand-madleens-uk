@@ -1,0 +1,264 @@
+backend:
+  name: github
+  repo: BalajSaleem/thousand-madleens
+  branch: main
+
+# For local development with GitHub backend
+local_backend: true
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "config"
+    label: "Site Configuration"
+    files:
+      - label: "Content"
+        name: "content"
+        file: "content.json"
+        fields:
+          # Site Settings
+          - label: "Site Settings"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Site Title", name: "title", widget: "string" }
+              - { label: "Site Description", name: "description", widget: "text" }
+              - { label: "Campaign Message", name: "campaignMessage", widget: "text", hint: "Used in social media sharing" }
+
+          # Navigation
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - { label: "Logo Path", name: "src", widget: "string" }
+                  - { label: "Logo Alt Text", name: "alt", widget: "string" }
+              - label: "Menu Items"
+                name: "menuItems"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+              - label: "Header Buttons"
+                name: "buttons"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Short Label (Mobile)", name: "shortLabel", widget: "string", required: false }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Style", name: "style", widget: "select", options: ["primary", "outline"] }
+
+          # Hero Section
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Background Image"
+                name: "backgroundImage"
+                widget: "object"
+                fields:
+                  - { label: "Image Path", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Call-to-Action Buttons"
+                name: "buttons"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name (e.g., HandHeart, Users)" }
+                  - { label: "Style", name: "style", widget: "select", options: ["primary", "outline"] }
+
+          # Mission Section
+          - label: "Mission Section"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Mission Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name (e.g., Heart, Globe)" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Goals Section
+          - label: "Goals Section"
+            name: "goals"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Goal Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Press Release
+          - label: "Press Release"
+            name: "pressRelease"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - label: "Announcement"
+                name: "announcement"
+                widget: "object"
+                fields:
+                  - { label: "Announcement Title", name: "title", widget: "string" }
+                  - { label: "Launch Date", name: "launchDate", widget: "string" }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - label: "Content Sections"
+                    name: "sections"
+                    widget: "list"
+                    fields:
+                      - { label: "Section Title", name: "title", widget: "string", required: false }
+                      - { label: "Content", name: "content", widget: "text" }
+                  - label: "Full Content (Paragraphs)"
+                    name: "fullContent"
+                    widget: "list"
+                    field: { label: "Paragraph", name: "paragraph", widget: "text" }
+                  - label: "Media Contacts"
+                    name: "mediaContacts"
+                    widget: "list"
+                    fields:
+                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Email", name: "email", widget: "string" }
+                      - { label: "Phone", name: "phone", widget: "string", required: false }
+                      - { label: "Organization", name: "organization", widget: "string" }
+                  - label: "Websites"
+                    name: "websites"
+                    widget: "list"
+                    field: { label: "Website URL", name: "url", widget: "string" }
+                  - { label: "Call to Action", name: "callToAction", widget: "text" }
+                  - label: "Key Messages"
+                    name: "keyMessages"
+                    widget: "list"
+                    field: { label: "Message", name: "message", widget: "string" }
+
+          # News Section
+          - label: "News Articles"
+            name: "news"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Description", name: "description", widget: "text" }
+              - label: "Articles"
+                name: "articles"
+                widget: "list"
+                fields:
+                  - { label: "Article ID", name: "id", widget: "number" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Image URL", name: "image", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Source", name: "source", widget: "string" }
+                  - { label: "Source Icon", name: "sourceIcon", widget: "string", default: "Globe" }
+                  - { label: "Badge Text", name: "badge", widget: "string" }
+                  - { label: "Badge Color", name: "badgeColor", widget: "string", hint: "CSS class like bg-red-600" }
+                  - { label: "Border Color", name: "borderColor", widget: "string", hint: "CSS class like border-red-200" }
+                  - { label: "Button Color", name: "buttonColor", widget: "string", hint: "CSS classes" }
+                  - { label: "Article Link", name: "link", widget: "string" }
+                  - { label: "Date", name: "date", widget: "string", required: false }
+                  - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+          # Social Media
+          - label: "Social Media"
+            name: "socialMedia"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Social Platforms"
+                name: "platforms"
+                widget: "list"
+                fields:
+                  - { label: "Platform Name", name: "name", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Icon component name" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Color Class", name: "color", widget: "string" }
+              - label: "Share Section"
+                name: "shareSection"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - label: "Share Buttons"
+                    name: "buttons"
+                    widget: "list"
+                    fields:
+                      - { label: "Label", name: "label", widget: "string" }
+                      - { label: "Short Label", name: "shortLabel", widget: "string", required: false }
+                      - { label: "Icon", name: "icon", widget: "string" }
+                      - { label: "Action", name: "action", widget: "string", required: false, hint: "copy, email, or leave blank for link" }
+                      - { label: "Link", name: "href", widget: "string", required: false }
+
+          # Disclaimer
+          - label: "Disclaimer"
+            name: "disclaimer"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string", default: "AlertTriangle" }
+              - label: "Disclaimer Points"
+                name: "points"
+                widget: "list"
+                fields:
+                  - { label: "Point Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Footer
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - { label: "Logo Path", name: "src", widget: "string" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Footer Sections"
+                name: "sections"
+                widget: "list"
+                fields:
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - label: "Links"
+                    name: "links"
+                    widget: "list"
+                    fields:
+                      - { label: "Label", name: "label", widget: "string" }
+                      - { label: "Link", name: "href", widget: "string" }
+              - label: "Social Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - { label: "Platform", name: "platform", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string" }
+              - label: "Copyright"
+                name: "copyright"
+                widget: "object"
+                fields:
+                  - { label: "Copyright Text", name: "text", widget: "string" }
+                  - label: "Footer Links"
+                    name: "links"
+                    widget: "list"
+                    fields:
+                      - { label: "Label", name: "label", widget: "string" }
+                      - { label: "Link", name: "href", widget: "string" }

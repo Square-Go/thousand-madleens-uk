@@ -1,94 +1,4 @@
 {
-  "site": {
-    "title": "Thousand Madleens to Gaza",
-    "description": "Breaking the blockade through peaceful solidarity and international cooperation.",
-    "campaignMessage": "Join the historic #1000MadleensToGaza flotilla! 🚢 Breaking the blockade through peaceful solidarity. Together we sail for justice and human rights. #FreePalestine #BreakTheBlockade"
-  },
-  "navigation": {
-    "logo": {
-      "src": "/navbar_logo_no_bg.png",
-      "alt": "1000 Madleens to Gaza Logo"
-    },
-    "menuItems": [
-      {
-        "label": "Mission",
-        "href": "#mission"
-      },
-      {
-        "label": "Goals",
-        "href": "#goals"
-      },
-      {
-        "label": "Press Release",
-        "href": "#press-release"
-      },
-      {
-        "label": "Get Involved",
-        "href": "#get-involved"
-      },
-      {
-        "label": "News",
-        "href": "#news"
-      },
-      {
-        "label": "FAQ",
-        "href": "#faq"
-      }
-    ],
-    "buttons": [
-      {
-        "label": "Join the Movement",
-        "shortLabel": "Join",
-        "href": "https://linktr.ee/thousand.madleens",
-        "style": "primary"
-      },
-      {
-        "label": "Donate",
-        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
-        "style": "primary"
-      }
-    ]
-  },
-  "hero": {
-    "backgroundImage": {
-      "src": "thousand-madleens-banner.jpg",
-      "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - Thousand Madleens to Gaza campaign"
-    },
-    "title": "Thousand Madleens to Gaza",
-    "subtitle": "Breaking the Israeli Blockade",
-    "tagline": "1000 Ships. One Mission. Free Gaza.",
-    "description": "A global maritime flotilla campaign to break the blockade of Gaza through peaceful solidarity. Inspired by resilience, driven by hope, united in action.",
-    "buttons": [
-      {
-        "label": "Support the Mission",
-        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
-        "icon": "HandHeart",
-        "style": "primary"
-      },
-      {
-        "label": "Join Community",
-        "href": "https://linktr.ee/thousand.madleens",
-        "icon": "Users",
-        "style": "outline"
-      }
-    ]
-  },
-  "mission": {
-    "title": "Our Mission",
-    "description": "A tribute to the resilience and patience of the people of Gaza, and a collective movement to stand alongside them.",
-    "cards": [
-      {
-        "title": "Tribute to Resilience",
-        "icon": "Heart",
-        "description": "The \"Madleen\" represents the unwavering spirit of the Palestinians who refuse to accept injustice. Our campaign honors the courage of all who have sailed these waters before us, carrying hope across the Mediterranean."
-      },
-      {
-        "title": "Global Solidarity",
-        "icon": "Globe",
-        "description": "From every corner of the world, we unite in peaceful resistance. 1000 ships from many nations will converge to break the Israeli genocidal blockade through the power of international civil society."
-      }
-    ]
-  },
   "goals": {
     "title": "Goals & Organization",
     "description": "Our mission is organized around clear objectives and coordinated international action.",
@@ -110,331 +20,25 @@
       }
     ]
   },
-  "map": {
-    "title": "Global Departure Points",
-    "description": "Ships from around the world will depart from these locations to join the historic flotilla to Gaza.",
-    "locations": [
-      {
-        "id": 1,
-        "country": "Belgium",
-        "flag": "🇧🇪",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.be",
-          "linktree": "https://linktr.ee/thousand.madleens.belgique"
-        }
-      },
-      {
-        "id": 2,
-        "country": "Canada",
-        "flag": "🇨🇦",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.canada",
-          "linktree": "https://linktr.ee/ThousandmadleensCA"
-        }
-      },
-      {
-        "id": 3,
-        "country": "Denmark",
-        "flag": "🇩🇰",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.denmark",
-          "linktree": "https://linktr.ee/Thousandmadleens.Danmark"
-        }
-      },
-      {
-        "id": 4,
-        "country": "France",
-        "flag": "🇫🇷",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleensfrance",
-          "linktree": "https://linktr.ee/thousandmadleensfr"
-        }
-      },
-      {
-        "id": 5,
-        "country": "Germany",
-        "flag": "🇩🇪",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.germany",
-          "linktree": "https://linktr.ee/Thousand.Madleens.Germany"
-        }
-      },
-      {
-        "id": 6,
-        "country": "Greece",
-        "flag": "🇬🇷",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.greece",
-          "linktree": "https://linktr.ee/thousand.madleens.greece"
-        }
-      },
-      {
-        "id": 7,
-        "country": "Italy",
-        "flag": "🇮🇹",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.italy",
-          "linktree": "https://linktr.ee/thousand.madleens.italy"
-        }
-      },
-      {
-        "id": 8,
-        "country": "Spain",
-        "flag": "🇪🇸",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.spain",
-          "linktree": "https://linktr.ee/thousandmadleenstogaza.spain"
-        }
-      },
-      {
-        "id": 9,
-        "country": "United Kingdom",
-        "flag": "🇬🇧",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.uk",
-          "linktree": "https://linktr.ee/Thousandmadleens.uk"
-        }
-      },
-      {
-        "id": 10,
-        "country": "United States",
-        "flag": "🇺🇸",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.usa",
-          "linktree": "https://linktr.ee/thousand.madleens"
-        }
-      },
-      {
-        "id": 11,
-        "country": "Turkey",
-        "flag": "🇹🇷",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.turkiye"
-        }
-      },
-      {
-        "id": 12,
-        "country": "Australia",
-        "flag": "🇦🇺",
-        "links": {
-          "instagram": "https://www.instagram.com/thousand.madleens.australia",
-          "linktree": "https://linktr.ee/thousand.madleens.aus"
-        }
-      },
-      {
-        "id": 13,
-        "country": "Switzerland",
-        "flag": "🇨🇭",
-        "links": {
-          "instagram": "https://www.instagram.com/thousandmadleens.switzerland/",
-          "linktree": "https://tr.ee/iGS9dmqtPV"
-        }
-      },
-      {
-        "id": 14,
-        "country": "Tunisia",
-        "flag": "🇹🇳",
-        "links": {
-          "instagram": "https://www.instagram.com/thousand.madleens.tunisia",
-          "linktree": "https://linktr.ee/thousand.madleens.tunisia"
-        }
-      }
-    ],
-    "callToAction": {
-      "title": "Join the Global Fleet",
-      "description": "Is your country organizing ships for the flotilla? Contact us to add your departure location to our global map and coordinate with the international fleet.",
-      "buttons": [
-        {
-          "label": "Register Departure Point",
-          "href": "https://thousandmadleensinternational.gogocarto.fr/map#/carte/@46.32,-0.68,6z?cat=all",
-          "icon": "Ship"
-        },
-        {
-          "label": "View All Locations",
-          "href": "https://thousandmadleensinternational.gogocarto.fr/map#/carte/@46.32,-0.68,6z?cat=all",
-          "icon": "MapPin"
-        }
-      ]
-    },
-    "registerButton": {
-      "label": "Register Your Ship",
-      "href": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
-      "description": "Add your departure location"
-    }
-  },
-  "advocacy": {
-    "title": "Raise Your Voice",
-    "description": "Contact your elected representatives and those in power to support our peaceful mission.",
-    "cards": [
-      {
-        "title": "Contact Representatives",
-        "icon": "Megaphone",
-        "description": "Find and contact your local representatives with our advocacy toolkit.",
-        "buttons": [
-          {
-            "label": "Find My Representatives",
-            "style": "primary"
-          },
-          {
-            "label": "Download Advocacy Kit",
-            "style": "outline"
-          }
-        ]
-      },
-      {
-        "title": "Letter Templates",
-        "icon": "MessageSquare",
-        "description": "Pre-written letters to government officials and international bodies.",
-        "buttons": [
-          {
-            "label": "Download Letters",
-            "style": "primary"
-          },
-          {
-            "label": "Customize Template",
-            "style": "outline"
-          }
-        ]
-      }
-    ]
-  },
-  "roles": {
-    "title": "How You Can Contribute",
-    "description": "Different roles for different skills - everyone has a part to play in this historic mission.",
-    "tabs": [
-      {
-        "id": "sailors",
-        "label": "Sailors",
-        "title": "Sailors & Crew",
-        "subtitle": "Experienced maritime professionals and volunteers",
-        "icon": "Ship",
-        "color": "text-green-700",
-        "requirements": [
-          "Maritime experience preferred",
-          "Valid passport and documentation",
-          "Commitment to peaceful resistance",
-          "Physical fitness for sea voyage"
-        ],
-        "responsibilities": [
-          "Ship operations and maintenance",
-          "Safety protocols and procedures",
-          "Coordination with flotilla",
-          "Media and documentation support"
-        ],
-        "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
-        "buttonLabel": "Apply as Sailor",
-        "buttonStyle": "bg-green-600 hover:bg-green-700"
-      },
-      {
-        "id": "navigators",
-        "label": "Navigators",
-        "title": "Navigators & Technical",
-        "subtitle": "Navigation, communications, and technical specialists",
-        "icon": "Anchor",
-        "color": "text-green-700",
-        "requirements": [
-          "Navigation or technical certification",
-          "GPS and communication systems experience",
-          "International waters knowledge",
-          "Emergency response training"
-        ],
-        "responsibilities": [
-          "Route planning and coordination",
-          "Inter-ship communications",
-          "Weather monitoring and safety",
-          "Technical equipment maintenance"
-        ],
-        "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
-        "buttonLabel": "Apply as Navigator",
-        "buttonStyle": "bg-green-600 hover:bg-green-700"
-      },
-      {
-        "id": "officials",
-        "label": "Officials",
-        "title": "Officials & Coordinators",
-        "subtitle": "Legal, diplomatic, and organizational leadership",
-        "icon": "Users",
-        "color": "text-black",
-        "requirements": [
-          "Legal or diplomatic background",
-          "International law knowledge",
-          "Multi-language capabilities",
-          "Crisis management experience"
-        ],
-        "responsibilities": [
-          "Legal compliance and documentation",
-          "Government and media relations",
-          "International coordination",
-          "Strategic planning and oversight"
-        ],
-        "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
-        "buttonLabel": "Apply as Official",
-        "buttonStyle": "bg-black hover:bg-gray-800 text-white"
-      },
-      {
-        "id": "citizens",
-        "label": "Citizens",
-        "title": "Citizens & Supporters",
-        "subtitle": "Ground support, advocacy, and community organizing",
-        "icon": "Heart",
-        "color": "text-green-700",
-        "requirements": [
-          "Fundraising and donations",
-          "Social media advocacy",
-          "Local event organization",
-          "Community outreach"
-        ],
-        "responsibilities": [
-          "Public awareness campaigns",
-          "Political pressure and lobbying",
-          "Solidarity events and demonstrations",
-          "Educational workshops"
-        ],
-        "applyLink": "https://t.me/+zSh_jAhFQZ1iNTNk",
-        "buttonLabel": "Join as Supporter",
-        "buttonStyle": "bg-green-600 hover:bg-green-700"
-      }
-    ]
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "description": "Common questions about the 1000 Madleens to Gaza campaign.",
-    "questions": [
-      {
-        "question": "What is the 1000 Madleens to Gaza campaign?",
-        "answer": "The 1000 Madleens to Gaza is a global civil society campaign aiming to organize a massive maritime flotilla of 1000 ships from many nations worldwide. The campaign seeks to break the blockade of Gaza through peaceful, coordinated international action, inspired by the recent voyage of the vessel \"Madleen.\""
-      },
-      {
-        "question": "How will the flotilla be organized?",
-        "answer": "Ships from participating nations will converge at a designated meeting point near Palestine before jointly sailing toward Gaza. The operation will be coordinated through international civil society organizations, with careful attention to maritime law, safety protocols, and peaceful resistance principles."
-      },
-      {
-        "question": "Is this a peaceful mission?",
-        "answer": "Yes, absolutely. The 1000 Madleens to Gaza campaign is committed to peaceful resistance and non-violent action. All participants must agree to strict non-violence protocols, and the mission operates within the framework of international law and civil disobedience."
-      },
-      {
-        "question": "How can I participate if I'm not a sailor?",
-        "answer": "There are many ways to support the campaign: financial donations, organizing local support groups, advocacy with elected representatives, social media campaigns, fundraising events, and spreading awareness in your community. Every form of support contributes to the mission's success."
-      },
-      {
-        "question": "What are the legal implications?",
-        "answer": "The campaign operates within international maritime law and the principles of civil disobedience. Participants are informed of potential legal risks, and the campaign works with legal experts to ensure compliance with international law while challenging what we consider to be an illegal blockade."
-      },
-      {
-        "question": "When will the flotilla sail?",
-        "answer": "The timeline depends on successful coordination of ships, crews, and international support. Updates on timing will be provided through our official channels as planning progresses. Safety and thorough preparation are prioritized over speed."
-      }
-    ]
-  },
   "pressRelease": {
     "title": "Official Press Release",
     "subtitle": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite",
     "date": "September 16, 2025",
     "announcement": {
-      "title": "Freedom Flotilla Coalition & Thousand Madleens to Gaza unite to sail for Gaza on September 24th",
       "launchDate": "September 24th, 2025",
-      "location": "Catania",
-      "description": "Two initiatives, one flotilla, one mission. The Freedom Flotilla Coalition (FFC) and Thousand Madleens to Gaza (TMTG) are joining forces as one flotilla to challenge Israel's illegal and deadly siege of Gaza.",
+      "fullContent": [
+        "The Freedom Flotilla Coalition (FFC) and Thousand Madleens to Gaza (TMTG) are joining forces as one flotilla to challenge Israel's illegal and deadly siege of Gaza. This alliance unites two global, people-led initiatives in a shared commitment to justice and solidarity with the Palestinian people.",
+        "On September 24th, 2025, we will launch the next wave of civilian ships to Gaza from Catania following the first boats of the Global Sumud Flotilla now en route to Palestine's shores. It continues a legacy of resistance that began with the Free Gaza Movement in 2008 and FFC's missions since 2010. We sail because world powers enable Israel's illegal siege. We sail to break it, to defy complicity, and to affirm the rights of Palestinians in Gaza.",
+        "This partnership is rooted in years of experience and grassroots organizing. By consolidating maritime safety, legal defence, and communications, we strengthen coordination, safety, messaging, and global impact to confront what governments, corporations and institutions have abandoned—to stop genocide, resist apartheid and demand accountability under international law. We sail because silence is betrayal. We sail because Gaza must live. We sail because Palestine must be free!",
+        "Israel's illegal siege of Gaza is both a humanitarian emergency and a political crime. Gaza is being annihilated, and her people deliberately starved, bombed, and erased by Israel and their allies. Children are dying of hunger and disease, denied food, clean water, medicine, and the basic right to live with dignity.",
+        "Since October 2023, Israel's genocidal assault has turned an already suffocating illegal blockade into a catastrophe. Yet our governments continue to arm, fund, and profit from this horror. We cannot wait for permission. We cannot wait for leaders who have chosen complicity over humanity. The urgency demands not one ship, but waves of ships.",
+        "Israel's recent armed attacks on the FFC's vessels—Conscience, Madleen, and Handala—ignited a worldwide response. Dozens of boats from across the globe have since joined the Global Sumud Flotilla, proving that the demand to break Israel's illegal siege on Gaza cannot be silenced or deterred."
+      ],
+      "keyMessages": [
+        "We sail because silence is betrayal",
+        "We sail because Gaza must live",
+        "We sail because Palestine must be free"
+      ],
       "sections": [
         {
           "title": "Two initiatives, one flotilla, one mission",
@@ -461,14 +65,8 @@
           "content": "Israel's recent armed attacks on the FFC's vessels—Conscience, Madleen, and Handala—ignited a worldwide response. Dozens of boats from across the globe have since joined the Global Sumud Flotilla, proving that the demand to break Israel's illegal siege on Gaza cannot be silenced or deterred."
         }
       ],
-      "fullContent": [
-        "The Freedom Flotilla Coalition (FFC) and Thousand Madleens to Gaza (TMTG) are joining forces as one flotilla to challenge Israel's illegal and deadly siege of Gaza. This alliance unites two global, people-led initiatives in a shared commitment to justice and solidarity with the Palestinian people.",
-        "On September 24th, 2025, we will launch the next wave of civilian ships to Gaza from Catania following the first boats of the Global Sumud Flotilla now en route to Palestine's shores. It continues a legacy of resistance that began with the Free Gaza Movement in 2008 and FFC's missions since 2010. We sail because world powers enable Israel's illegal siege. We sail to break it, to defy complicity, and to affirm the rights of Palestinians in Gaza.",
-        "This partnership is rooted in years of experience and grassroots organizing. By consolidating maritime safety, legal defence, and communications, we strengthen coordination, safety, messaging, and global impact to confront what governments, corporations and institutions have abandoned—to stop genocide, resist apartheid and demand accountability under international law. We sail because silence is betrayal. We sail because Gaza must live. We sail because Palestine must be free!",
-        "Israel's illegal siege of Gaza is both a humanitarian emergency and a political crime. Gaza is being annihilated, and her people deliberately starved, bombed, and erased by Israel and their allies. Children are dying of hunger and disease, denied food, clean water, medicine, and the basic right to live with dignity.",
-        "Since October 2023, Israel's genocidal assault has turned an already suffocating illegal blockade into a catastrophe. Yet our governments continue to arm, fund, and profit from this horror. We cannot wait for permission. We cannot wait for leaders who have chosen complicity over humanity. The urgency demands not one ship, but waves of ships.",
-        "Israel's recent armed attacks on the FFC's vessels—Conscience, Madleen, and Handala—ignited a worldwide response. Dozens of boats from across the globe have since joined the Global Sumud Flotilla, proving that the demand to break Israel's illegal siege on Gaza cannot be silenced or deterred."
-      ],
+      "callToAction": "We invite media to attend our launch event in Catania prior to the launch date to give ample time for interviews. Please contact media@freedomflotilla.org or thousand.madleens@proton.me",
+      "location": "Catania",
       "mediaContacts": [
         {
           "name": "Hay Sha Wiya",
@@ -482,146 +80,215 @@
           "organization": "Thousand Madleens to Gaza"
         }
       ],
+      "title": "Freedom Flotilla Coalition & Thousand Madleens to Gaza unite to sail for Gaza on September 24th",
       "websites": [
         "https://freedomflotilla.org",
         "https://www.thousandmadleens.org/"
       ],
-      "callToAction": "We invite media to attend our launch event in Catania prior to the launch date to give ample time for interviews. Please contact media@freedomflotilla.org or thousand.madleens@proton.me",
-      "keyMessages": [
-        "We sail because silence is betrayal",
-        "We sail because Gaza must live",
-        "We sail because Palestine must be free"
-      ]
+      "description": "Two initiatives, one flotilla, one mission. The Freedom Flotilla Coalition (FFC) and Thousand Madleens to Gaza (TMTG) are joining forces as one flotilla to challenge Israel's illegal and deadly siege of Gaza."
     }
+  },
+  "site": {
+    "title": "Thousand Madleens to Gaza",
+    "description": "Breaking the blockade through peaceful solidarity and international cooperation.",
+    "campaignMessage": "Join the historic #1000MadleensToGaza flotilla! 🚢 Breaking the blockade through peaceful solidarity. Together we sail for justice and human rights. #FreePalestine #BreakTheBlockade"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "A tribute to the resilience and patience of the people of Gaza, and a collective movement to stand alongside them.",
+    "cards": [
+      {
+        "title": "Tribute to Resilience",
+        "icon": "Heart",
+        "description": "The \"Madleen\" represents the unwavering spirit of the Palestinians who refuse to accept injustice. Our campaign honors the courage of all who have sailed these waters before us, carrying hope across the Mediterranean."
+      },
+      {
+        "title": "Global Solidarity",
+        "icon": "Globe",
+        "description": "From every corner of the world, we unite in peaceful resistance. 1000 ships from many nations will converge to break the Israeli genocidal blockade through the power of international civil society."
+      }
+    ]
   },
   "news": {
     "title": "Latest News",
     "description": "Stay updated with the latest developments in our mission to Gaza",
     "articles": [
       {
-        "id": 1,
-        "title": "Gaza-Bound Flotilla Grows to 40 Vessels After Joining Sicilian Group",
-        "image": "https://s.yimg.com/ny/api/res/1.2/.qL7_F2Do7bKaVkbM.evLg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYyODtjZj13ZWJw/https://media.zenfs.com/en/jerusalem_post_articles_818/9109a151c93da34fb41a3d557ae9bbc4",
-        "description": "The Global Sumud Flotilla expands dramatically as vessels from Spain merge with Sicilian contingent, creating an armada of 40 ships now 1,000 miles from Gaza. Despite facing drone threats and challenging conditions, the international fleet remains determined to break the blockade.",
-        "source": "Jerusalem Post",
-        "sourceIcon": "Globe",
-        "badge": "Breaking News",
         "badgeColor": "bg-red-600",
-        "borderColor": "border-red-200",
-        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
-        "link": "https://www.yahoo.com/news/articles/gaza-bound-flotilla-grows-40-181219779.html",
+        "badge": "Breaking News",
+        "featured": true,
         "date": "September 20, 2025",
-        "featured": true
+        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
+        "sourceIcon": "Globe",
+        "borderColor": "border-red-200",
+        "title": "Gaza-Bound Flotilla Grows to 40 Vessels After Joining Sicilian Group",
+        "link": "https://www.yahoo.com/news/articles/gaza-bound-flotilla-grows-40-181219779.html",
+        "source": "Jerusalem Post",
+        "id": 1,
+        "image": "https://s.yimg.com/ny/api/res/1.2/.qL7_F2Do7bKaVkbM.evLg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYyODtjZj13ZWJw/https://media.zenfs.com/en/jerusalem_post_articles_818/9109a151c93da34fb41a3d557ae9bbc4",
+        "description": "The Global Sumud Flotilla expands dramatically as vessels from Spain merge with Sicilian contingent, creating an armada of 40 ships now 1,000 miles from Gaza. Despite facing drone threats and challenging conditions, the international fleet remains determined to break the blockade."
       },
       {
-        "id": 2,
-        "title": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite for September 24th Launch",
-        "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_537,w_822/681934",
-        "description": "Historic alliance announced as FFC and TMTG join forces for a unified flotilla launching September 24th, 2025 from Catania. Two global initiatives unite with one mission: to challenge Israel's illegal siege of Gaza through coordinated maritime resistance.",
-        "source": "Press Release",
-        "sourceIcon": "Globe",
-        "badge": "Major Announcement",
         "badgeColor": "bg-orange-600",
-        "borderColor": "border-orange-200",
-        "buttonColor": "border-orange-600 text-orange-600 hover:bg-orange-50",
-        "link": "https://www.jpost.com/middle-east/article-868156",
-        "date": "September 16, 2025",
-        "featured": false
-      },
-      {
-        "id": 3,
-        "title": "THE 1000 FLOTILLA INITIATIVE TO BREAK THE SIEGE",
-        "image": "https://mapim.org.my/wp-content/uploads/2025/06/THE-1000-FLOTILLA-INITIATIVE-TO-BREAK-THE-SIEGE-1200x480.png",
-        "description": "A comprehensive look at the ambitious campaign to organize 1000 ships from around the world in solidarity with Gaza, breaking the blockade through peaceful maritime resistance.",
-        "source": "MAPIM",
-        "sourceIcon": "MapPin",
-        "badge": "Featured",
-        "badgeColor": "bg-green-600",
-        "borderColor": "border-green-200",
-        "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
-        "link": "https://mapim.org.my/2025/06/13/the-1000-flotilla-initiative-to-break-the-siege/"
-      },
-      {
-        "id": 4,
-        "title": "A Thousand Madleens: New Civilian Fleet Readies to Defy Israeli Blockade",
-        "image": "https://qudsnen.co/wp-content/uploads/2025/06/IMG_5537-780x432.jpeg",
-        "description": "International civil society prepares an unprecedented maritime flotilla as civilians worldwide unite to challenge the blockade of Gaza through coordinated peaceful action.",
-        "source": "Quds News",
-        "sourceIcon": "Globe",
-        "badge": "Featured",
-        "badgeColor": "bg-green-600",
-        "borderColor": "border-green-200",
-        "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
-        "link": "https://qudsnen.co/a-thousand-madleens-new-civilian-fleet-readies-to-defy-israeli-blockade/"
-      },
-      {
-        "id": 5,
-        "title": "Swindon Fete to Fund Aid Volunteer's Gaza Flotilla Journey",
-        "image": "https://unsplash.com/photos/D9lCSvUcErk/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzU1MzUxMDk5fA&force=true&w=640",
-        "description": "A summer fete by Swindon Palestine Solidarity aims to raise funds for volunteer Liaquth Ali's participation in the 'A Thousand Madleens to Gaza' flotilla, featuring family-friendly activities and cultural events.",
-        "source": "Local Community",
-        "sourceIcon": "Users",
-        "badge": "Community",
-        "badgeColor": "bg-blue-600",
-        "borderColor": "border-blue-200",
-        "buttonColor": "border-blue-600 text-blue-600 hover:bg-blue-50",
-        "link": "#"
-      },
-      {
-        "id": 6,
-        "title": "Flotilla for Palestine: Support Center for Gaza Opens in Nice",
-        "image": "https://www.nice-premium.com/wp-content/uploads/2025/08/image-57-1068x601.jpg",
-        "description": "Thousand Madleens Nice opens its doors as a support center following the return of the Madleen crew and Soumoud caravan, establishing a base for raising awareness about the Gaza flotilla movement.",
-        "source": "Nice Premium",
-        "sourceIcon": "MapPin",
-        "badge": "Local News",
-        "badgeColor": "bg-purple-600",
-        "borderColor": "border-purple-200",
-        "buttonColor": "border-purple-600 text-purple-600 hover:bg-purple-50",
-        "link": "#"
-      },
-      {
-        "id": 7,
-        "title": "'Thousand Ship Flotilla' Announced to Challenge Israel's Gaza Blockade",
-        "image": "https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2025/06/GettyImages-2218796600.jpg?fit=920%2C613&ssl=1",
-        "description": "Malaysian civil society coalition led by MAPIM announces the largest maritime mobilization of its kind, aiming to send vessels from across the globe carrying humanitarian aid to Gaza in defiance of Israel's naval embargo.",
-        "source": "Middle East Monitor",
-        "sourceIcon": "Globe",
         "badge": "Major Announcement",
-        "badgeColor": "bg-red-600",
-        "borderColor": "border-red-200",
-        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
-        "link": "#"
+        "featured": false,
+        "date": "September 16, 2025",
+        "buttonColor": "border-orange-600 text-orange-600 hover:bg-orange-50",
+        "sourceIcon": "Globe",
+        "borderColor": "border-orange-200",
+        "title": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite for September 24th Launch",
+        "link": "https://www.jpost.com/middle-east/article-868156",
+        "source": "Press Release",
+        "id": 2,
+        "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_537,w_822/681934",
+        "description": "Historic alliance announced as FFC and TMTG join forces for a unified flotilla launching September 24th, 2025 from Catania. Two global initiatives unite with one mission: to challenge Israel's illegal siege of Gaza through coordinated maritime resistance."
       },
       {
-        "id": 8,
-        "title": "8 US Veterans Join Gaza-Bound Flotilla in Protest of Complicity in Israel's Genocidal War",
-        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2025/09/18/thumbs_b_c_368eab71648174d3df73ec1d60176d02.jpg?v=110030",
-        "description": "Eight US military veterans have joined the Global Sumud Flotilla in a powerful act of conscience, defying the same war machine they once served. Their participation highlights growing American opposition to US complicity in Israel's war on Gaza, as they sail with a clear message: 'End genocide, end complicity, and free Palestine.'",
-        "source": "Anadolu Agency",
-        "sourceIcon": "Globe",
-        "badge": "Breaking News",
-        "badgeColor": "bg-red-600",
-        "borderColor": "border-red-200",
-        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
-        "link": "https://www.aa.com.tr/en/world/8-us-veterans-join-gaza-bound-flotilla-in-protest-of-complicity-in-israel-s-genocidal-war/3691060",
-        "date": "September 18, 2025",
-        "featured": true
+        "badgeColor": "bg-green-600",
+        "badge": "Featured",
+        "featured": false,
+        "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
+        "sourceIcon": "MapPin",
+        "borderColor": "border-green-200",
+        "title": "THE 1000 FLOTILLA INITIATIVE TO BREAK THE SIEGE",
+        "link": "https://mapim.org.my/2025/06/13/the-1000-flotilla-initiative-to-break-the-siege/",
+        "source": "MAPIM",
+        "id": 3,
+        "image": "https://mapim.org.my/wp-content/uploads/2025/06/THE-1000-FLOTILLA-INITIATIVE-TO-BREAK-THE-SIEGE-1200x480.png",
+        "description": "A comprehensive look at the ambitious campaign to organize 1000 ships from around the world in solidarity with Gaza, breaking the blockade through peaceful maritime resistance."
       },
       {
-        "id": 9,
-        "title": "13th Maghreb Sumud Flotilla Ship Sets Sail from Tunisia Toward Gaza",
-        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2025/09/18/thumbs_b_c_04a2d886b996ee0a71d144e7c2b06e9c.jpg?v=083259",
-        "description": "The 13th ship from the Maghreb Sumud Flotilla departed Gammarth port north of Tunis as part of the larger Global Sumud Flotilla. With dozens of Tunisians gathered to see it off, the vessel joins 12 other ships already en route to Gaza, while Greek vessels prepare to unite with the solidarity fleet challenging Israel's 18-year blockade.",
-        "source": "Anadolu Agency",
+        "badgeColor": "bg-green-600",
+        "badge": "Featured",
+        "featured": false,
+        "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
         "sourceIcon": "Globe",
-        "badge": "Fleet Update",
+        "borderColor": "border-green-200",
+        "title": "A Thousand Madleens: New Civilian Fleet Readies to Defy Israeli Blockade",
+        "link": "https://qudsnen.co/a-thousand-madleens-new-civilian-fleet-readies-to-defy-israeli-blockade/",
+        "source": "Quds News",
+        "id": 4,
+        "image": "https://qudsnen.co/wp-content/uploads/2025/06/IMG_5537-780x432.jpeg",
+        "description": "International civil society prepares an unprecedented maritime flotilla as civilians worldwide unite to challenge the blockade of Gaza through coordinated peaceful action."
+      },
+      {
         "badgeColor": "bg-blue-600",
-        "borderColor": "border-blue-200",
+        "badge": "Community",
+        "featured": false,
         "buttonColor": "border-blue-600 text-blue-600 hover:bg-blue-50",
-        "link": "https://www.aa.com.tr/en/middle-east/13th-maghreb-sumud-flotilla-ship-sets-sail-from-tunisia-toward-gaza/3690938",
+        "sourceIcon": "Users",
+        "borderColor": "border-blue-200",
+        "title": "Swindon Fete to Fund Aid Volunteer's Gaza Flotilla Journey",
+        "link": "#",
+        "source": "Local Community",
+        "id": 5,
+        "image": "https://unsplash.com/photos/D9lCSvUcErk/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzU1MzUxMDk5fA&force=true&w=640",
+        "description": "A summer fete by Swindon Palestine Solidarity aims to raise funds for volunteer Liaquth Ali's participation in the 'A Thousand Madleens to Gaza' flotilla, featuring family-friendly activities and cultural events."
+      },
+      {
+        "badgeColor": "bg-purple-600",
+        "badge": "Local News",
+        "featured": false,
+        "buttonColor": "border-purple-600 text-purple-600 hover:bg-purple-50",
+        "sourceIcon": "MapPin",
+        "borderColor": "border-purple-200",
+        "title": "Flotilla for Palestine: Support Center for Gaza Opens in Nice",
+        "link": "#",
+        "source": "Nice Premium",
+        "id": 6,
+        "image": "https://www.nice-premium.com/wp-content/uploads/2025/08/image-57-1068x601.jpg",
+        "description": "Thousand Madleens Nice opens its doors as a support center following the return of the Madleen crew and Soumoud caravan, establishing a base for raising awareness about the Gaza flotilla movement."
+      },
+      {
+        "badgeColor": "bg-red-600",
+        "badge": "Major Announcement",
+        "featured": false,
+        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
+        "sourceIcon": "Globe",
+        "borderColor": "border-red-200",
+        "title": "'Thousand Ship Flotilla' Announced to Challenge Israel's Gaza Blockade",
+        "link": "#",
+        "source": "Middle East Monitor",
+        "id": 7,
+        "image": "https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2025/06/GettyImages-2218796600.jpg?fit=920%2C613&ssl=1",
+        "description": "Malaysian civil society coalition led by MAPIM announces the largest maritime mobilization of its kind, aiming to send vessels from across the globe carrying humanitarian aid to Gaza in defiance of Israel's naval embargo."
+      },
+      {
+        "badgeColor": "bg-red-600",
+        "badge": "Breaking News",
+        "featured": true,
         "date": "September 18, 2025",
-        "featured": false
+        "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
+        "sourceIcon": "Globe",
+        "borderColor": "border-red-200",
+        "title": "8 US Veterans Join Gaza-Bound Flotilla in Protest of Complicity in Israel's Genocidal War",
+        "link": "https://www.aa.com.tr/en/world/8-us-veterans-join-gaza-bound-flotilla-in-protest-of-complicity-in-israel-s-genocidal-war/3691060",
+        "source": "Anadolu Agency",
+        "id": 8,
+        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2025/09/18/thumbs_b_c_368eab71648174d3df73ec1d60176d02.jpg?v=110030",
+        "description": "Eight US military veterans have joined the Global Sumud Flotilla in a powerful act of conscience, defying the same war machine they once served. Their participation highlights growing American opposition to US complicity in Israel's war on Gaza, as they sail with a clear message: 'End genocide, end complicity, and free Palestine.'"
+      },
+      {
+        "badgeColor": "bg-blue-600",
+        "badge": "Fleet Update",
+        "featured": false,
+        "date": "September 18, 2025",
+        "buttonColor": "border-blue-600 text-blue-600 hover:bg-blue-50",
+        "sourceIcon": "Globe",
+        "borderColor": "border-blue-200",
+        "title": "13th Maghreb Sumud Flotilla Ship Sets Sail from Tunisia Toward Gaza",
+        "link": "https://www.aa.com.tr/en/middle-east/13th-maghreb-sumud-flotilla-ship-sets-sail-from-tunisia-toward-gaza/3690938",
+        "source": "Anadolu Agency",
+        "id": 9,
+        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2025/09/18/thumbs_b_c_04a2d886b996ee0a71d144e7c2b06e9c.jpg?v=083259",
+        "description": "The 13th ship from the Maghreb Sumud Flotilla departed Gammarth port north of Tunis as part of the larger Global Sumud Flotilla. With dozens of Tunisians gathered to see it off, the vessel joins 12 other ships already en route to Gaza, while Greek vessels prepare to unite with the solidarity fleet challenging Israel's 18-year blockade."
+      }
+    ]
+  },
+  "navigation": {
+    "logo": {
+      "src": "/navbar_logo_no_bg.png",
+      "alt": "1000 Madleens to Gaza Logo"
+    },
+    "menuItems": [
+      {
+        "label": "Mission",
+        "href": "#mission"
+      },
+      {
+        "label": "Goals",
+        "href": "#goals"
+      },
+      {
+        "label": "Press Release",
+        "href": "#press-release"
+      },
+      {
+        "label": "Get Involved",
+        "href": "#"
+      },
+      {
+        "label": "News",
+        "href": "#news"
+      }
+    ],
+    "buttons": [
+      {
+        "label": "Join the Movement",
+        "shortLabel": "Join",
+        "href": "https://linktr.ee/thousand.madleens",
+        "style": "primary"
+      },
+      {
+        "label": "Donate",
+        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
+        "style": "primary"
+      },
+      {
+        "label": "Test Robbie",
+        "shortLabel": "Test Robbie",
+        "href": "#hello",
+        "style": "primary"
       }
     ]
   },
@@ -682,30 +349,27 @@
       ]
     }
   },
-  "disclaimer": {
-    "title": "Important Disclaimer",
-    "subtitle": "Legal and Safety Notice",
-    "icon": "AlertTriangle",
-    "points": [
+  "hero": {
+    "backgroundImage": {
+      "src": "thousand-madleens-banner.jpg",
+      "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - Thousand Madleens to Gaza campaign"
+    },
+    "title": "Thousand Madleens to Gaza",
+    "subtitle": "Breaking the Israeli Blockade",
+    "tagline": "1000 Ships. One Mission. Free Gaza.",
+    "description": "A global maritime flotilla campaign to break the blockade of Gaza through peaceful solidarity. Inspired by resilience, driven by hope, united in action.",
+    "buttons": [
       {
-        "title": "Peaceful Mission",
-        "description": "The 1000 Madleens to Gaza campaign is committed to peaceful, non-violent resistance. All participants must agree to strict non-violence protocols."
+        "label": "Support the Mission",
+        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
+        "icon": "HandHeart",
+        "style": "primary"
       },
       {
-        "title": "Legal Risks",
-        "description": "Participants should be aware that this mission may involve legal risks, including potential detention or legal proceedings. We recommend consulting with legal counsel before participating."
-      },
-      {
-        "title": "Safety First",
-        "description": "Maritime operations carry inherent risks. All vessels must meet safety standards, and participants must have appropriate maritime experience or training."
-      },
-      {
-        "title": "International Law",
-        "description": "This campaign operates within the framework of international maritime law and the principles of civil disobedience in challenging what we consider to be violations of international law."
-      },
-      {
-        "title": "Independent Participation",
-        "description": "Participation in this campaign is voluntary and at your own risk. The campaign organizers cannot be held responsible for individual decisions or consequences."
+        "label": "Join Community",
+        "href": "https://linktr.ee/thousand.madleens",
+        "icon": "Users",
+        "style": "outline"
       }
     ]
   },
@@ -729,11 +393,7 @@
           },
           {
             "label": "Get Involved",
-            "href": "#get-involved"
-          },
-          {
-            "label": "FAQ",
-            "href": "#faq"
+            "href": "#"
           }
         ]
       },
@@ -794,5 +454,32 @@
         }
       ]
     }
+  },
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "subtitle": "Legal and Safety Notice",
+    "icon": "AlertTriangle",
+    "points": [
+      {
+        "title": "Peaceful Mission",
+        "description": "The 1000 Madleens to Gaza campaign is committed to peaceful, non-violent resistance. All participants must agree to strict non-violence protocols."
+      },
+      {
+        "title": "Legal Risks",
+        "description": "Participants should be aware that this mission may involve legal risks, including potential detention or legal proceedings. We recommend consulting with legal counsel before participating."
+      },
+      {
+        "title": "Safety First",
+        "description": "Maritime operations carry inherent risks. All vessels must meet safety standards, and participants must have appropriate maritime experience or training."
+      },
+      {
+        "title": "International Law",
+        "description": "This campaign operates within the framework of international maritime law and the principles of civil disobedience in challenging what we consider to be violations of international law."
+      },
+      {
+        "title": "Independent Participation",
+        "description": "Participation in this campaign is voluntary and at your own risk. The campaign organizers cannot be held responsible for individual decisions or consequences."
+      }
+    ]
   }
 }
