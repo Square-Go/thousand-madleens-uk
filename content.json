@@ -239,7 +239,7 @@
     ],
     "buttons": [
       {
-        "label": "Join the Movement",
+        "label": "Join the UK Delegation",
         "shortLabel": "Join",
         "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/",
         "style": "primary"
@@ -317,7 +317,7 @@
         "style": "outline"
       },
       {
-        "label": "Join the Movement",
+        "label": "Join the UK Delegation",
         "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/",
         "icon": "Users",
         "style": "outline"
