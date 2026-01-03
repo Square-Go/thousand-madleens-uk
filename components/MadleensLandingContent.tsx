@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import NewsCarousel from "@/components/news-carousel";
 import PressRelease from "@/components/press-release";
+import CampaignProgress from "@/components/campaign-progress";
 import {
   Ship,
   Heart,
@@ -255,6 +256,30 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                 );
               })}
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Get Involved Section */}
+      <section id="get-involved" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                {content.getInvolved.title}
+              </h2>
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                {content.getInvolved.description}
+              </p>
+            </div>
+
+            <CampaignProgress campaignId={content.getInvolved.campaignId} />
           </motion.div>
         </div>
       </section>

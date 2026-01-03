@@ -20,6 +20,11 @@
       }
     ]
   },
+  "getInvolved": {
+    "title": "Get Involved",
+    "description": "Support our mission to break the blockade of Gaza. Every contribution helps us reach our goal of organizing 1000 ships for Palestinian freedom.",
+    "campaignId": 143268
+  },
   "pressRelease": {
     "title": "Official Press Release",
     "subtitle": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite",

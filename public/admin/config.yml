@@ -109,6 +109,15 @@ collections:
                   - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
                   - { label: "Description", name: "description", widget: "text" }
 
+          # Get Involved Section
+          - label: "Get Involved Section"
+            name: "getInvolved"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Campaign ID", name: "campaignId", widget: "number", hint: "Chuffed campaign ID (e.g., 143268)" }
+
           # Press Release
           - label: "Press Release"
             name: "pressRelease"
