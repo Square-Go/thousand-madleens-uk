@@ -56,11 +56,11 @@
       {
         "id": 2,
         "slug": "birmingham-flotilla-launch",
-        "title": "Flotilla Launh",
+        "title": "Flotilla Launch",
         "location": "The Old Print Works, 498-506 Moseley Rd, Balsall Heath, Birmingham",
         "dateTime": "2026-01-25T17:30",
         "endTime": "20:30",
-        "shortDescription": "TMTG & Activist Independent Movement present an evening of live entertainment and speakers to launch the 2026 Flotilla.",
+        "shortDescription": "TMTG UK & Activist Independent Movement present an evening of live entertainment and speakers to launch the 2026 Flotilla.",
         "fullDescription": "More information to follow.",
         "eventType": "Fundraiser",
         "image": "/events/flotilla-launch.jpeg"
@@ -68,7 +68,7 @@
       {
         "id": 3,
         "slug": "national-march-jan-2026",
-        "title": "National March",
+        "title": "National Demonstration",
         "location": "London",
         "dateTime": "2026-01-31T12:00",
         "endTime": "18:00",
@@ -177,6 +177,10 @@
       {
         "label": "Goals",
         "href": "#goals"
+      },
+      {
+        "label": "Get Involved",
+        "href": "#get-involved"
       },
       {
         "label": "Press Release",

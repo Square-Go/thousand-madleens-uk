@@ -79,8 +79,8 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
     });
   };
 
-  // Split events into sets of 2
-  const eventsPerSet = 2;
+  // Split events into sets of 3
+  const eventsPerSet = 3;
   const totalSets = Math.ceil(events.length / eventsPerSet);
 
   const getCurrentEvents = () => {
@@ -147,7 +147,7 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                         className={`overflow-hidden h-full shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02] ${theme.borderColor}`}
                       >
                         <div className="flex flex-col sm:flex-row">
-                          <div className="relative h-48 sm:h-40 sm:w-64 lg:w-80 overflow-hidden flex-shrink-0">
+                          <div className="relative h-64 sm:h-full sm:w-64 lg:w-80 overflow-hidden flex-shrink-0">
                             <Image
                               src={event.image}
                               alt={event.title}
@@ -189,12 +189,7 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                               {event.shortDescription}
                             </p>
 
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center space-x-2 text-sm text-gray-500">
-                                <MapPin className="h-4 w-4" />
-                                <span>{event.location}</span>
-                              </div>
-
+                            <div className="flex items-center justify-end">
                               <Link href={`/events/${event.slug}`}>
                                 <Button
                                   variant="outline"

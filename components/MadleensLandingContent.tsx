@@ -298,6 +298,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
 
               {/* Join UK Delegation Card */}
               <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg p-6 flex flex-col">
+                <h3 className="text-2xl font-bold text-black mb-6 text-center">Join Us</h3>
                 <div className="space-y-4 mb-6 flex-grow">
                   {content.getInvolved.joinDelegation.points.map((point: any, index: number) => (
                     <div key={index} className="flex items-start gap-3">
