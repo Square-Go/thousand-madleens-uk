@@ -59,6 +59,25 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
 
   const { title, description, events } = content.events;
 
+  // Format date and time for display from ISO datetime
+  const formatDate = (dateTime: string) => {
+    const date = new Date(dateTime);
+    return date.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  };
+
+  const formatTime = (dateTime: string) => {
+    const date = new Date(dateTime);
+    return date.toLocaleTimeString('en-GB', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+  };
+
   // Split events into sets of 2
   const eventsPerSet = 2;
   const totalSets = Math.ceil(events.length / eventsPerSet);
@@ -111,6 +130,10 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                   // Get theme styling
                   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 
+                  // Format date/time for display
+                  const displayDate = event.dateTime ? formatDate(event.dateTime) : event.date || '';
+                  const displayTime = event.dateTime ? formatTime(event.dateTime) : event.time || '';
+
                   return (
                     <motion.div
                       key={event.id}
@@ -148,26 +171,26 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                             <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 mb-3">
                               <div className="flex items-center gap-1">
                                 <MapPin className="h-4 w-4" />
-                                <span>{event.city}</span>
+                                <span>{event.location}</span>
                               </div>
                               <div className="flex items-center gap-1">
                                 <Calendar className="h-4 w-4" />
-                                <span>{event.date}</span>
+                                <span>{displayDate}</span>
                               </div>
                               <div className="flex items-center gap-1">
                                 <Clock className="h-4 w-4" />
-                                <span>{event.time}</span>
+                                <span>{displayTime}</span>
                               </div>
                             </div>
 
                             <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-3">
-                              {event.description}
+                              {event.shortDescription}
                             </p>
 
                             <div className="flex items-center justify-between">
                               <div className="flex items-center space-x-2 text-sm text-gray-500">
                                 <MapPin className="h-4 w-4" />
-                                <span>{event.city}</span>
+                                <span>{event.location}</span>
                               </div>
 
                               <Link href={`/events/${event.slug}`}>

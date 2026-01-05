@@ -10,6 +10,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import Link from "next/link";
+import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 // Event type badge themes (matching events-section.tsx)
 const eventThemes = {
@@ -50,6 +51,28 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
   // Use home page banner for hero
   const heroBannerImage = "/thousand-madleens-banner.jpg";
 
+  // Format date and time for display from ISO datetime
+  const formatDate = (dateTime: string) => {
+    const date = new Date(dateTime);
+    return date.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  };
+
+  const formatTime = (dateTime: string) => {
+    const date = new Date(dateTime);
+    return date.toLocaleTimeString('en-GB', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+  };
+
+  const displayDate = event.dateTime ? formatDate(event.dateTime) : event.date || '';
+  const displayTime = event.dateTime ? formatTime(event.dateTime) : event.time || '';
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Banner - Same as home page */}
@@ -58,7 +81,7 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
           <img
             src={heroBannerImage}
             alt="Thousand Madleens to Gaza"
-            className="w-full h-full object-cover object-top opacity-40"
+            className="w-full h-full object-cover object-top opacity-20"
           />
           <div className="absolute inset-0 "></div>
         </div>
@@ -94,22 +117,39 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
 
         {/* Event Metadata */}
         <motion.div
-          className="flex flex-wrap gap-6 mb-8 p-6 bg-gray-50 rounded-lg"
+          className="mb-8 p-6 bg-gray-50 rounded-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <div className="flex items-center gap-2 text-gray-700">
-            <MapPin className="h-5 w-5 text-green-600" />
-            <span className="font-medium">{event.city}</span>
-          </div>
-          <div className="flex items-center gap-2 text-gray-700">
-            <Calendar className="h-5 w-5 text-green-600" />
-            <span className="font-medium">{event.date}</span>
-          </div>
-          <div className="flex items-center gap-2 text-gray-700">
-            <Clock className="h-5 w-5 text-green-600" />
-            <span className="font-medium">{event.time}</span>
+          <div className="flex flex-wrap items-center gap-6">
+            <div className="flex items-center gap-2 text-gray-700">
+              <MapPin className="h-5 w-5 text-green-600" />
+              <span className="font-medium">{event.location}</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-700">
+              <Calendar className="h-5 w-5 text-green-600" />
+              <span className="font-medium">{displayDate}</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-700">
+              <Clock className="h-5 w-5 text-green-600" />
+              <span className="font-medium">{displayTime}</span>
+            </div>
+
+            {/* Add to Calendar Button */}
+            <div className="ml-auto">
+              <AddToCalendarButton
+                  name={event.title}
+                  startDate={event.dateTime.split('T')[0]}
+                  startTime={event.dateTime.split('T')[1]}
+                  endTime={event.endTime || "23:00"}
+                  timeZone="Europe/London"
+                  location={event.location}
+                  description={event.shortDescription}
+                  options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
+                  lightMode="bodyScheme"
+              />
+            </div>
           </div>
         </motion.div>
 

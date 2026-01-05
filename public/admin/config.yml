@@ -141,10 +141,10 @@ collections:
                   - { label: "Event ID", name: "id", widget: "number" }
                   - { label: "URL Slug", name: "slug", widget: "string", hint: "⚠️ WARNING: Changing this will change the event URL. Use lowercase with dashes (e.g., national-march-jan-2026)" }
                   - { label: "Title", name: "title", widget: "string" }
-                  - { label: "City", name: "city", widget: "string" }
-                  - { label: "Date", name: "date", widget: "string", hint: "e.g., 31st January 2026" }
-                  - { label: "Time", name: "time", widget: "string", hint: "e.g., 11:00 AM" }
-                  - { label: "Short Description", name: "description", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Date & Time", name: "dateTime", widget: "datetime", hint: "Select start date and time for the event", format: "YYYY-MM-DDTHH:mm" }
+                  - { label: "End Time", name: "endTime", widget: "string", hint: "Event end time in 24-hour format (e.g., 15:00 for 3 PM)" }
+                  - { label: "Short Description", name: "shortDescription", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
                   - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event detail page. Use line breaks for paragraphs." }
                   - { label: "Image URL", name: "image", widget: "string" }
                   - label: "Event Type"
@@ -197,45 +197,6 @@ collections:
                     name: "keyMessages"
                     widget: "list"
                     field: { label: "Message", name: "message", widget: "string" }
-
-          # News Section
-          - label: "News Articles"
-            name: "news"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "Section Description", name: "description", widget: "text" }
-              - label: "Articles"
-                name: "articles"
-                widget: "list"
-                fields:
-                  - { label: "Article ID", name: "id", widget: "number" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Image URL", name: "image", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Source", name: "source", widget: "string" }
-                  - label: "Source Icon"
-                    name: "sourceIcon"
-                    widget: "select"
-                    default: "Globe"
-                    options:
-                      - { label: "Globe (News outlets)", value: "Globe" }
-                      - { label: "MapPin (Location-based)", value: "MapPin" }
-                      - { label: "Users (Community)", value: "Users" }
-                  - label: "Badge Theme"
-                    name: "badgeTheme"
-                    widget: "select"
-                    hint: "Selects badge text and coordinated colors"
-                    options:
-                      - { label: "Breaking News (Red)", value: "Breaking News" }
-                      - { label: "Major Announcement (Orange)", value: "Major Announcement" }
-                      - { label: "Featured (Green)", value: "Featured" }
-                      - { label: "Community (Blue)", value: "Community" }
-                      - { label: "Local News (Purple)", value: "Local News" }
-                      - { label: "Fleet Update (Blue)", value: "Fleet Update" }
-                  - { label: "Article Link", name: "link", widget: "string" }
-                  - { label: "Date", name: "date", widget: "string", required: false }
-                  - { label: "Featured", name: "featured", widget: "boolean", default: false }
 
           # Social Media
           - label: "Social Media"

@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import NewsCarousel from "@/components/news-carousel";
 import PressRelease from "@/components/press-release";
 import CampaignProgress from "@/components/campaign-progress";
 import EventsSection from "@/components/events-section";
@@ -117,7 +116,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
           <img
             src={content.hero.backgroundImage.src}
             alt={content.hero.backgroundImage.alt}
-            className="w-full h-full object-cover object-top opacity-40"
+            className="w-full h-full object-cover object-top opacity-20"
           />
           <div className="absolute inset-0 "></div>
         </div>
@@ -321,9 +320,6 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
 
       {/* Press Release Section */}
       <PressRelease content={content} />
-
-      {/* News Section */}
-      <NewsCarousel content={content} />
 
       {/* Social Media Section - Moved to Bottom */}
       <section className="py-8 sm:py-16 bg-black text-white">
