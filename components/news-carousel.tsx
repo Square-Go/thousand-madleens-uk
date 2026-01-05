@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,6 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import defaultContent from "../content.json";
 
 // Icon mapping for dynamic icon rendering
@@ -84,10 +85,10 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
     return articles.slice(start, start + articlesPerSet);
   };
 
-  const nextSet = () => {
+  const nextSet = useCallback(() => {
     setCurrentSet((prev) => (prev + 1) % totalSets);
     setProgress(0);
-  };
+  }, [totalSets]);
 
   const previousSet = () => {
     setCurrentSet((prev) => (prev - 1 + totalSets) % totalSets);
@@ -224,10 +225,11 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                       >
                         <div className="flex flex-col sm:flex-row">
                           <div className="relative h-48 sm:h-40 sm:w-64 lg:w-80 overflow-hidden flex-shrink-0">
-                            <img
+                            <Image
                               src={article.image}
                               alt={article.title}
-                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                              fill
+                              className="object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute top-3 left-3">
                               <Badge

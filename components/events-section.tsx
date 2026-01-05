@@ -14,6 +14,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import defaultContent from "../content.json";
 
 // Event type badge themes
@@ -147,10 +148,11 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                       >
                         <div className="flex flex-col sm:flex-row">
                           <div className="relative h-48 sm:h-40 sm:w-64 lg:w-80 overflow-hidden flex-shrink-0">
-                            <img
+                            <Image
                               src={event.image}
                               alt={event.title}
-                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                              fill
+                              className="object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute top-3 left-3">
                               <Badge

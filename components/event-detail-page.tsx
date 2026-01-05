@@ -210,15 +210,16 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
 
         {/* Event Image Inline */}
         <motion.div
-          className="mb-12"
+          className="mb-12 relative w-full h-96"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <img
+          <Image
             src={event.image}
             alt={event.title}
-            className="w-full rounded-lg shadow-lg"
+            fill
+            className="object-cover rounded-lg shadow-lg"
           />
         </motion.div>
 
