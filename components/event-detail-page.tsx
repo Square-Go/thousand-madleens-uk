@@ -8,6 +8,7 @@ import {
   Calendar,
   Clock,
   ArrowLeft,
+  ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
