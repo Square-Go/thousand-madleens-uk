@@ -14,7 +14,7 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
     notFound();
   }
 
-  return <EventDetailPage event={event} />;
+  return <EventDetailPage event={event} content={content} />;
 }
 
 // Generate static params for all events at build time

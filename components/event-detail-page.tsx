@@ -14,8 +14,8 @@ import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 // Event type badge themes (matching events-section.tsx)
 const eventThemes = {
-  "March": {
-    badge: "March",
+  "Protest": {
+    badge: "Protest",
     badgeColor: "bg-red-600",
     borderColor: "border-red-200",
   },
@@ -43,9 +43,10 @@ const eventThemes = {
 
 interface EventDetailPageProps {
   event: any;
+  content: any;
 }
 
-export default function EventDetailPage({ event }: EventDetailPageProps) {
+export default function EventDetailPage({ event, content }: EventDetailPageProps) {
   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 
   // Use home page banner for hero
@@ -75,8 +76,53 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Header - Same as main page */}
+      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+        <div className="w-full max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
+          <div className="flex items-center space-x-3 flex-shrink-0">
+            <Link href="/">
+              <img
+                src={content.navigation.logo.src}
+                alt={content.navigation.logo.alt}
+                className="h-20 w-auto object-contain cursor-pointer"
+              />
+            </Link>
+          </div>
+          <nav className="hidden md:flex space-x-8 flex-1 justify-center">
+            {content.navigation.menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={`/${item.href}`}
+                className="text-gray-700 font-bold hover:text-green-600 transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="flex items-center space-x-2">
+            <Link target="_blank" href={content.navigation.buttons[0].href}>
+              <Button className="bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm px-3 py-2 whitespace-nowrap">
+                <span className="hidden sm:inline">
+                  {content.navigation.buttons[0].label}
+                </span>
+                <span className="sm:hidden">
+                  {content.navigation.buttons[0].shortLabel}
+                </span>
+              </Button>
+            </Link>
+            <Link target="_blank" href={content.navigation.buttons[1].href}>
+              <Button className="bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm px-3 py-2 whitespace-nowrap">
+                <span className="sm:inline">
+                  {content.navigation.buttons[1].label}
+                </span>
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Banner - Same as home page */}
-      <section className="relative h-96 bg-black text-white overflow-hidden">
+      <section className="relative h-96 bg-black text-white overflow-hidden mt-24">
         <div className="absolute inset-0">
           <img
             src={heroBannerImage}
@@ -96,62 +142,55 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
             <Badge className={`${theme.badgeColor} text-white mb-4`}>
               {event.eventType}
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               {event.title}
             </h1>
+
+            {/* Event metadata */}
+            <div className="flex flex-wrap items-center gap-4 text-white">
+              <div className="flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-green-400" />
+                <span className="font-medium text-lg">{event.location}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Calendar className="h-5 w-5 text-green-400" />
+                <span className="font-medium text-lg">{displayDate}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="h-5 w-5 text-green-400" />
+                <span className="font-medium text-lg">{displayTime}</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* Event Details */}
       <div className="container mx-auto px-4 py-12 max-w-4xl">
-        {/* Back Button */}
-        <div className="mb-8">
+        {/* Back Button and Add to Calendar */}
+        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <Link href="/#events">
             <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Events
             </Button>
           </Link>
-        </div>
 
-        {/* Event Metadata */}
-        <motion.div
-          className="mb-8 p-6 bg-gray-50 rounded-lg"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <div className="flex flex-wrap items-center gap-6">
-            <div className="flex items-center gap-2 text-gray-700">
-              <MapPin className="h-5 w-5 text-green-600" />
-              <span className="font-medium">{event.location}</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-700">
-              <Calendar className="h-5 w-5 text-green-600" />
-              <span className="font-medium">{displayDate}</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-700">
-              <Clock className="h-5 w-5 text-green-600" />
-              <span className="font-medium">{displayTime}</span>
-            </div>
-
-            {/* Add to Calendar Button */}
-            <div className="ml-auto">
-              <AddToCalendarButton
-                  name={event.title}
-                  startDate={event.dateTime.split('T')[0]}
-                  startTime={event.dateTime.split('T')[1]}
-                  endTime={event.endTime || "23:00"}
-                  timeZone="Europe/London"
-                  location={event.location}
-                  description={event.shortDescription}
-                  options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
-                  lightMode="bodyScheme"
-              />
-            </div>
+          {/* Add to Calendar Button */}
+          <div>
+            <AddToCalendarButton
+                name={event.title}
+                startDate={event.dateTime.split('T')[0]}
+                startTime={event.dateTime.split('T')[1]}
+                endTime={event.endTime || "23:00"}
+                timeZone="Europe/London"
+                location={event.location}
+                description={event.shortDescription}
+                options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
+                lightMode="bodyScheme"
+            />
           </div>
-        </motion.div>
+        </div>
 
         {/* Full Description */}
         <motion.div

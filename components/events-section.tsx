@@ -18,8 +18,8 @@ import defaultContent from "../content.json";
 
 // Event type badge themes
 const eventThemes = {
-  "March": {
-    badge: "March",
+  "Protest": {
+    badge: "Protest",
     badgeColor: "bg-red-600",
     borderColor: "border-red-200",
     buttonColor: "border-red-600 text-red-600 hover:bg-red-50"

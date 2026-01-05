@@ -152,7 +152,7 @@ collections:
                     widget: "select"
                     hint: "Selects badge and coordinated colors"
                     options:
-                      - { label: "March (Red)", value: "March" }
+                      - { label: "Protest (Red)", value: "Protest" }
                       - { label: "Fundraiser (Green)", value: "Fundraiser" }
                       - { label: "Meeting (Blue)", value: "Meeting" }
                       - { label: "Workshop (Purple)", value: "Workshop" }
