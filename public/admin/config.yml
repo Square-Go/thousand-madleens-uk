@@ -139,11 +139,13 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Event ID", name: "id", widget: "number" }
+                  - { label: "URL Slug", name: "slug", widget: "string", hint: "⚠️ WARNING: Changing this will change the event URL. Use lowercase with dashes (e.g., national-march-jan-2026)" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "City", name: "city", widget: "string" }
                   - { label: "Date", name: "date", widget: "string", hint: "e.g., 31st January 2026" }
                   - { label: "Time", name: "time", widget: "string", hint: "e.g., 11:00 AM" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Short Description", name: "description", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
+                  - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event detail page. Use line breaks for paragraphs." }
                   - { label: "Image URL", name: "image", widget: "string" }
                   - label: "Event Type"
                     name: "eventType"
@@ -155,7 +157,6 @@ collections:
                       - { label: "Meeting (Blue)", value: "Meeting" }
                       - { label: "Workshop (Purple)", value: "Workshop" }
                       - { label: "Community Event (Orange)", value: "Community" }
-                  - { label: "Registration Link", name: "link", widget: "string", required: false }
 
           # Press Release
           - label: "Press Release"

@@ -110,7 +110,6 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                 {getCurrentEvents().map((event, index) => {
                   // Get theme styling
                   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
-                  const hasLink = event.link && event.link !== "#";
 
                   return (
                     <motion.div
@@ -171,27 +170,16 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                                 <span>{event.city}</span>
                               </div>
 
-                              {hasLink ? (
-                                <Link href={event.link} target="_blank">
-                                  <Button
-                                    variant="outline"
-                                    size="sm"
-                                    className={`${theme.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
-                                  >
-                                    Learn More
-                                    <ExternalLink className="ml-2 h-4 w-4" />
-                                  </Button>
-                                </Link>
-                              ) : (
+                              <Link href={`/events/${event.slug}`}>
                                 <Button
                                   variant="outline"
                                   size="sm"
-                                  className="border-gray-400 text-gray-400 bg-transparent"
-                                  disabled
+                                  className={`${theme.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
                                 >
-                                  Details Coming Soon
+                                  View Details
+                                  <ExternalLink className="ml-2 h-4 w-4" />
                                 </Button>
-                              )}
+                              </Link>
                             </div>
                           </CardContent>
                         </div>

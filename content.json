@@ -41,14 +41,15 @@
     "events": [
       {
         "id": 1,
+        "slug": "national-march-jan-2026",
         "title": "National March",
         "city": "London",
         "date": "31st January 2026",
         "time": "11:00 AM",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Join us for this important march in solidarity with Palestine.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nJoin us for this historic march through London in solidarity with Palestine and the Spring 2026 flotilla. Together we stand for justice and freedom.",
         "eventType": "March",
-        "image": "/thousand-madleens-banner.jpg",
-        "link": "#"
+        "image": "/thousand-madleens-banner.jpg"
       }
     ]
   },
