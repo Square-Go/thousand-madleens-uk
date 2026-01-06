@@ -1,13 +1,16 @@
 backend:
   name: github
-  repo: BalajSaleem/thousand-madleens
+  repo: ThousandMadleensUk/thousand-madleens-uk
   branch: main
+  site_domain: https://thousand-madleens-uk.pages.dev
+  base_url: https://thousand-madleens-uk.pages.dev/
+  auth_endpoint: /api/auth
 
 # For local development with GitHub backend
 local_backend: true
 
 media_folder: "public/images"
-public_folder: "/images"
+public_folder: "/public"
 
 # Enable preview - load actual site in iframe
 show_preview_links: true
