@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import PressRelease from "@/components/press-release";
+// import PressRelease from "@/components/press-release";
 import CampaignProgress from "@/components/campaign-progress";
 import EventsSection from "@/components/events-section";
 import {
@@ -324,8 +324,10 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
       {/* Events Section */}
       <EventsSection content={content} />
 
-      {/* Press Release Section */}
-      <PressRelease content={content} />
+      {/* Press Release Section - Currently Hidden */}
+      {/* Uncomment the line below to re-enable the press release section */}
+      {/* Press release component is available at: components/press-release.tsx */}
+      {/* <PressRelease content={content} /> */}
 
       {/* Social Media Section - Moved to Bottom */}
       <section className="py-8 sm:py-16 bg-black text-white">
