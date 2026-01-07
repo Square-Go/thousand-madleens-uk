@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +10,9 @@ import {
   Clock,
   ArrowLeft,
   ExternalLink,
+  Share2,
 } from "lucide-react";
+import { ShareModal } from "@/components/share-modal";
 import Link from "next/link";
 import Image from "next/image";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
@@ -49,6 +52,7 @@ interface EventDetailPageProps {
 }
 
 export default function EventDetailPage({ event, content }: EventDetailPageProps) {
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 
   // Use home page banner for hero
@@ -184,6 +188,15 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
                 </Button>
               </Link>
             )}
+
+            {/* Share Event Button */}
+            <Button
+              className="bg-green-600 hover:bg-green-700 text-white"
+              onClick={() => setIsShareModalOpen(true)}
+            >
+              <Share2 className="mr-2 h-4 w-4" />
+              Share Event
+            </Button>
           </div>
 
           {/* Add to Calendar Button */}
@@ -201,6 +214,19 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
             />
           </div>
         </div>
+
+        {/* Share Modal */}
+        <ShareModal
+          isOpen={isShareModalOpen}
+          onClose={() => setIsShareModalOpen(false)}
+          url={typeof window !== 'undefined'
+            ? window.location.href
+            : `https://thousand-madleens-uk.pages.dev/events/${event.slug}`
+          }
+          title={event.title}
+          message={event.shareMessage || event.shortDescription}
+          modalTitle="Share Event"
+        />
 
         {/* Full Description */}
         <motion.div

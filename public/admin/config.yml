@@ -149,6 +149,7 @@ collections:
                   - { label: "End Time", name: "endTime", widget: "string", hint: "Event end time in 24-hour format (e.g., 15:00 for 3 PM)" }
                   - { label: "Short Description", name: "shortDescription", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
                   - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event detail page. Use line breaks for paragraphs." }
+                  - { label: "Share Message", name: "shareMessage", widget: "text", required: false, hint: "Custom message for social media sharing. If empty, will use the short description. Keep under 200 characters for best results." }
                   - { label: "Image URL", name: "image", widget: "string" }
                   - { label: "Tickets URL", name: "ticketsUrl", widget: "string", required: false, hint: "Optional: Link to ticket/registration page for this event" }
                   - label: "Event Type"

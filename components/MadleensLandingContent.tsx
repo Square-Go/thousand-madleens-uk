@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +12,7 @@ import {
 // import PressRelease from "@/components/press-release";
 import CampaignProgress from "@/components/campaign-progress";
 import EventsSection from "@/components/events-section";
+import { ShareModal } from "@/components/share-modal";
 import {
   Ship,
   Heart,
@@ -62,6 +64,7 @@ interface MadleensLandingContentProps {
 
 export default function MadleensLandingContent({ content }: MadleensLandingContentProps) {
   const campaignMessage = content.site.campaignMessage;
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -346,7 +349,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               {content.socialMedia.description}
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-2 mb-3 sm:mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-2 mb-3 sm:mb-4">
               {content.socialMedia.platforms.map((platform: any, index: number) => {
                 const IconComponent =
                   iconMap[platform.icon as keyof typeof iconMap];
@@ -385,84 +388,23 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                   &quot;{campaignMessage}&quot;
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
-                {content.socialMedia.shareSection.buttons.map(
-                  (button: any, index: number) => {
-                    const IconComponent =
-                      iconMap[button.icon as keyof typeof iconMap];
-
-                    if (button.action === "copy") {
-                      return (
-                        <Button
-                          key={index}
-                          className="bg-green-600 hover:bg-green-700 text-xs sm:text-sm px-3 py-2"
-                          onClick={async () => {
-                            await navigator.clipboard.writeText(
-                              campaignMessage
-                            );
-                            toast.success("Message copied to clipboard!");
-                          }}
-                        >
-                          <IconComponent className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                          <span className="hidden sm:inline">
-                            {button.label}
-                          </span>
-                          <span className="sm:hidden">{button.shortLabel}</span>
-                        </Button>
-                      );
-                    }
-
-                    if (button.action === "email") {
-                      return (
-                        <Button
-                          key={index}
-                          variant="outline"
-                          className="border-white text-white hover:bg-white hover:text-black bg-transparent text-xs sm:text-sm px-3 py-2"
-                          onClick={() => {
-                            const subject = encodeURIComponent(
-                              "Join the 1000 Madleens to Gaza Campaign"
-                            );
-                            const body = encodeURIComponent(
-                              `${campaignMessage}\n\nLearn more and get involved: ${window.location.href}`
-                            );
-                            window.open(
-                              `mailto:?subject=${subject}&body=${body}`
-                            );
-                            toast.info("Email client opened");
-                          }}
-                        >
-                          <IconComponent className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                          <span className="hidden sm:inline">
-                            {button.label}
-                          </span>
-                          <span className="sm:hidden">{button.shortLabel}</span>
-                        </Button>
-                      );
-                    }
-
-                    if (button.href) {
-                      return (
-                        <Link key={index} href={button.href} target="_blank">
-                          <Button
-                            variant="outline"
-                            className="border-white text-white hover:bg-white hover:text-black bg-transparent text-xs sm:text-sm px-3 py-2"
-                          >
-                            <IconComponent className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                            <span className="hidden sm:inline">
-                              {button.label}
-                            </span>
-                            <span className="sm:hidden">
-                              {button.shortLabel}
-                            </span>
-                          </Button>
-                        </Link>
-                      );
-                    }
-
-                    return null;
-                  }
-                )}
+              <div className="flex justify-center">
+                <Button
+                  className="bg-green-600 hover:bg-green-700 text-sm sm:text-base px-6 py-3"
+                  onClick={() => setIsShareModalOpen(true)}
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Share Our Mission
+                </Button>
               </div>
+
+              <ShareModal
+                isOpen={isShareModalOpen}
+                onClose={() => setIsShareModalOpen(false)}
+                url={typeof window !== 'undefined' ? window.location.href : 'https://thousand-madleens-uk.pages.dev'}
+                title="Join the 1000 Madleens to Gaza Campaign"
+                message={campaignMessage}
+              />
             </div>
           </motion.div>
         </div>
