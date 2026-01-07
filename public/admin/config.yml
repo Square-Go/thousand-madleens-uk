@@ -9,7 +9,7 @@ backend:
 # For local development with GitHub backend
 local_backend: true
 
-media_folder: "public/images"
+media_folder: "/public/images"
 public_folder: "/public"
 
 # Enable preview - load actual site in iframe

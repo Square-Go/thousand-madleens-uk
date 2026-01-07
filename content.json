@@ -165,7 +165,7 @@
   },
   "navigation": {
     "logo": {
-      "src": "/images/navbar_logo_no_bg.png",
+      "src": "/images/uk-full-logo.png",
       "alt": "1000 Madleens to Gaza Logo"
     },
     "menuItems": [
@@ -312,10 +312,6 @@
           {
             "label": "Telegram",
             "href": "https://t.me/+zSh_jAhFQZ1iNTNk"
-          },
-          {
-            "label": "Resources",
-            "href": "https://drive.google.com/drive/folders/1PlywKwfu7Ad4JZKzGdLuvtF8Rk3M-riu"
           }
         ]
       }

@@ -75,9 +75,10 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
             <Image
               src={content.navigation.logo.src}
               alt={content.navigation.logo.alt}
-              width={80}
-              height={80}
-              className="h-20 w-auto object-contain"
+              width={240}
+              height={100}
+              quality={95}
+              className="h-20 w-auto object-contain my-2.5"
             />
           </div>
           <nav className="hidden md:flex space-x-8 flex-1 justify-center">
@@ -157,7 +158,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                   const IconComponent =
                     iconMap[button.icon as keyof typeof iconMap];
                   return (
-                    <Link key={index} target="_blank" href={button.href}>
+                    <Link
+                      key={index}
+                      href={button.href}
+                      {...(!button.href.startsWith('#') && { target: "_blank" })}
+                    >
                       <Button
                         size="lg"
                         className={

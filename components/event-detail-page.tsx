@@ -90,9 +90,10 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
               <Image
                 src={content.navigation.logo.src}
                 alt={content.navigation.logo.alt}
-                width={80}
-                height={80}
-                className="h-20 w-auto object-contain cursor-pointer"
+                width={240}
+                height={100}
+                quality={95}
+                className="h-20 w-auto object-contain cursor-pointer my-2.5"
               />
             </Link>
           </div>
