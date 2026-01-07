@@ -52,7 +52,7 @@
         "fullDescription": "Line up: Ivo Graham, Amir El-Masry, Fatiha El-Ghorri, Karl Porter, Finlay Christie, Thomas Green, Tez Ilyas, Sami Abu Wardeh, Sukina Noor (poem)\n\nThis January, Palestine's para-cycling team, the Gaza Sunbirds, will bring London crowds together for an evening of comedy and poetry in support of Palestine. With a lineup featuring Ivo Graham, Amir El-Masry, Fatiha El-Ghorri and Thomas Green, the squad of amputee athletes and their community have programmed a very special event at beloved Islington venue, Union Chapel.\n\nThe Gaza Sunbirds have gained global recognition over the last two years for their courageous aid missions in the strip. The team formed in 2020 with a dream of representing Palestine on the sporting world stage. Forced to give up their training regime in 2023 due to the Israeli bombardment, they turned their attention to supporting their local community. Since then, they have been risking their lives on one leg to distribute $520,000+ USD worth of food and supplies in Southern and central Gaza. The show will fundraise for their work in the strip as well as international goals such as entering Palestine's first para-cyclists to the LA 2028 Paralympics. A portion of the proceeds will also go to Thousand Madleens to Gaza, a citizen led initiative aiming to break the siege on Gaza.\n\n*This event is for 16+, under 18s must be accompanied by an adult",
         "shareMessage": "Join us for an evening of comedy supporting Palestinian freedom and the Gaza Sunbirds! Get your tickets now.",
         "eventType": "Fundraiser",
-        "image": "/events/sunbirds.jpg"
+        "image": "/images/events/sunbirds.jpg"
       },
       {
         "id": 2,
@@ -61,11 +61,11 @@
         "location": "The Old Print Works, 498-506 Moseley Rd, Balsall Heath, Birmingham",
         "dateTime": "2026-01-25T17:30",
         "endTime": "20:30",
-        "shortDescription": "TMTG UK & Activist Independent Movement present an evening of live speakers and more to launch the 2026 Flotilla.",
+        "shortDescription": "TMTG UK & Activist Independent Movement present an evening of live speakers and other inspiring acts to launch the 2026 Flotilla.",
         "fullDescription": "More information to follow.",
         "shareMessage": "Be part of the historic 2026 Flotilla launch in Birmingham! Join us for live speakers and more.",
         "eventType": "Fundraiser",
-        "image": "/events/flotilla-launch.jpeg"
+        "image": "/images/events/flotilla-launch.jpeg"
       },
       {
         "id": 3,
@@ -78,7 +78,7 @@
         "fullDescription": "END THE GENOCIDE – HANDS OFF GAZA – STOP ARMING ISRAEL\n\nIsrael's genocide against the Palestinian people has not ended. Join us for our next march for Palestine to demand our government end its complicity in Israel's violence.\n\nJoin us on Saturday 31 January for the first national march for Palestine in 2026. Assemble 12 noon in Central London.",
         "shareMessage": "Stand with Palestine on January 31st! Join the national demonstration in London to end the genocide.",
         "eventType": "Protest",
-        "image": "/events/national-demo.jpg"
+        "image": "/images/events/national-demo.jpg"
       }
     ]
   },
@@ -165,7 +165,7 @@
   },
   "navigation": {
     "logo": {
-      "src": "/navbar_logo_no_bg.png",
+      "src": "/images/navbar_logo_no_bg.png",
       "alt": "1000 Madleens to Gaza Logo"
     },
     "menuItems": [
@@ -246,7 +246,7 @@
   },
   "hero": {
     "backgroundImage": {
-      "src": "/thousand-madleens-banner.jpg",
+      "src": "/images/thousand-madleens-banner.jpg",
       "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - Thousand Madleens to Gaza campaign"
     },
     "title": "Thousand Madleens to Gaza UK Delegation",
@@ -276,7 +276,7 @@
   },
   "footer": {
     "logo": {
-      "src": "/navbar_logo_no_bg.png",
+      "src": "/images/navbar_logo_no_bg.png",
       "alt": "1000 Madleens to Gaza Logo"
     },
     "description": "Breaking the blockade through peaceful solidarity and international cooperation.",

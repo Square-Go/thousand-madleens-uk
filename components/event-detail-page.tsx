@@ -56,7 +56,7 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 
   // Use home page banner for hero
-  const heroBannerImage = "/thousand-madleens-banner.jpg";
+  const heroBannerImage = "/images/thousand-madleens-banner.jpg";
 
   // Format date and time for display from ISO datetime
   const formatDate = (dateTime: string) => {

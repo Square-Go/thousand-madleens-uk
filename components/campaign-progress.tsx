@@ -87,7 +87,7 @@ export default function CampaignProgress({ campaignId = 143268 }: CampaignProgre
       {/* Banner Image */}
       <div className="w-full h-48 overflow-hidden relative">
         <Image
-          src="/donate.jpg"
+          src="/images/donate.jpg"
           alt="Support the campaign"
           fill
           className="object-cover"

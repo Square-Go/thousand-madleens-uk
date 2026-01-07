@@ -190,7 +190,7 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                             </p>
 
                             <div className="flex items-center justify-end">
-                              <Link href={`/events/${event.slug}`}>
+                              <Link href={`/images/events/${event.slug}`}>
                                 <Button
                                   variant="outline"
                                   size="sm"
