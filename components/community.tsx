@@ -8,6 +8,7 @@ import { Users, MessageSquare } from "lucide-react";
 export default function CommunityWidget() {
   return (
     <section id="community" className="py-16 bg-white">
+
       <div className="container mx-auto px-4">
         <motion.div
           className="max-w-6xl mx-auto"
